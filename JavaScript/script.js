@@ -6,4 +6,22 @@ loginBtn.addEventListener("click", function () {
   transactionArea.style.display = "block";
 })
 
+let depositBtn = document.getElementById("deposit")
+depositBtn.addEventListener("click", function () {
+
+  let depositAmount = document.getElementById("deposit-amount").value;
+  let depositNumber = parseFloat(depositAmount);
+
+  let currentDeposit = document.getElementById("current-deposit").innerText;
+
+  let currentDepositNumber = parseFloat(currentDeposit);
+
+  let totalDeposit = currentDepositNumber + depositNumber;
+
+  document.getElementById("current-deposit").innerText = totalDeposit;
+})
+
+
+
+
 
