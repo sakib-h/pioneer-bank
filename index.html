@@ -29,14 +29,20 @@
 
    <div id="transaction-area">
      <div class="row d-flex justify-content-between">
+
+       <!-- deposit area -->
        <div class="col-md-3 deposit pl-5">
          <h5>Deposit</h5>
          <h2>$ <span id="current-deposit">00</span> </h2>
        </div>
+
+       <!-- withdraw area -->
        <div class="col-md-3 withdraw">
          <h5>Withdraw</h5>
-         <h2>$00</h2>
+         <h2>$ <span id="total-withdraw">00</span> </h2>
        </div>
+
+       <!-- total balance area -->
        <div class="col-md-3 balance">
          <h5>Balance</h5>
          <h2>$ <span id="balance">1240</span> </h2>
@@ -53,7 +59,8 @@
        <div class="col-md-6">
          <div class="submit-area">
            <h4>Withdraw</h4>
-           <input type="text" class="form-control" placeholder="$ amount you want to withdraw"> <br>
+           <input type="text" class="form-control" placeholder="$ amount you want to withdraw" id="withdraw-amount">
+           <br>
            <button class="btn btn-success" id="withdraw">Withdraw</button>
          </div>
        </div>
